@@ -41,7 +41,7 @@ body {
 }
 
 .exemple_recipe_img {
-    background-image: url(/Level1_Newbie/001_Recipe_page/images/chocolate_quente.jpg);
+    background-image: url(../images/chocolate_quente.jpg);
     background-size: cover;
     background-position: center;
     background-color: #732C4D;
