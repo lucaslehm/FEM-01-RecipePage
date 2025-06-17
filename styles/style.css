@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --titles: "Young Serif", serif;
+    --texts: "Outfit", sans-serif;
+    --body_bg: #F3E5D8;
+    --content_bg: #FEF8FC;
+    --main_title: #323130;
+    --subtitles: #73392C;
+    --special_subtitle: #732C4D;
+    --text_color: #554B49;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body_bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe_page_main_content {
+    margin: 5em;
+    background-color: var(--content_bg);
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border-radius: 2em;
+    padding: 2.5em;
+}
+
+.recipe_introduction_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.exemple_recipe_img {
+    background-image: url(/Level1_Newbie/001_Recipe_page/images/chocolate_quente.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #732C4D;
+    width: 100%;
+    height: 350px;
+    border-radius: 1em;
+}
+
+.recipe_title {
+    font-family: var(--titles);
+    font-weight: 300;
+    color: var(--main_title);
+    font-size: 2em;
+}
+
+.recipe_description {
+    font-family: var(--texts);
+    color: var(--text_color);
+}
+
+.recipe_time_details_content {
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.time_of_recipe_title {
+    color: var(--special_subtitle);
+    font-family: var(--texts);
+    margin-bottom: 1em;
+}
+
+.time_of_recipe_list {
+    color: var(--text_color);
+    font-family: var(--texts);
+    list-style-type: none;
+}
+
+.list_type {
+    color: var(--special_subtitle);
+    margin-right: 1em;
+}
+
+.time_recipe_list_item {
+    margin-bottom: 0.5em;
+}
+
+.recipe_sub_title {
+    color: var(--subtitles);
+    font-family: var(--titles);
+    font-weight: 200;
+    margin-bottom: 0.5em;
+}
+
+.list_of_ingredients {
+    font-family: var(--texts);
+    color: var(--text_color);
+    list-style-type: none;
+}
+
+.list_type_color {
+    color: var(--subtitles);
+    margin-right: 1em;
+}
+
+.ingredient_list_item {
+    margin-bottom: 0.5em;
+}
+
+.horizontal_divider {
+    margin: 1em 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+.recipe_instructions_list {
+    list-style-type: none;
+    font-family: var(--texts);
+    color: var(--text_color);
+}
+
+.instruction_list_item {
+    margin-bottom: 0.5em;
+}
+
+.recipe_macronutrients_table {
+    padding: 1em;
+    font-family: var(--texts);
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.macronutrient_area {
+    color: var(--text_color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.macronutrient_value {
+    color: var(--subtitles);
+    font-weight: 700;
+}
+
+
+.credits {
+    margin-top: 3em;
+    align-self: center;
+    color: var(--text_color);
+    font-size: 0.8em;
+    font-family: var(--texts);
+}
+
+.credits > a {
+    color: var(--special_subtitle);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.credits > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        background-color: var(--content_bg);
+    }
+
+    .recipe_page_main_content {
+        margin: 0em;
+        width: 100%;
+        padding: 0em;
+    }
+
+    .exemple_recipe_img {
+        border-radius: 0em;
+    }
+
+    .padding {
+        padding: 0px 2.5em;
+    }
+}
